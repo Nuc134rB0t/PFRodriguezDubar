@@ -22,7 +22,7 @@
   padding: 0;
   bottom: 0;
   right: 0;
-  width: 20%;
+  width: 200px;
   height: 40px;
   background-color: #ed4b00;
   border-radius: 50px 0 0 0;
@@ -454,7 +454,7 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 0px;
 }
 
-.card__title, h3, .accordion-body > p {
+.card__title, .accordion-descTitle, .accordion-body > p {
   color: #161616;
 }
 
@@ -616,4 +616,28 @@ body::-webkit-scrollbar-thumb {
     grid-column: 2/3;
     grid-row: 5/6;
   }
+}
+.footer {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  height: 40px;
+  background-color: #ed4b00;
+  border-radius: 50px 0 0 0;
+  z-index: 2;
+}
+.footer .links {
+  height: 100%;
+  text-align: center;
+  line-height: 40px;
+}
+.footer .links .item-link {
+  height: 100%;
+}
+.footer .links .item-link .fa-brands {
+  height: 40px;
+  width: 50px;
 }/*# sourceMappingURL=styles.css.map */
