@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Personajes | Mario!</title>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Conoce más sobre tus personajes favoritos." />
+    <meta name="keywords" content="Personajes, caracteristicas, detalles." />
+    <link rel="shortcut icon" href="../media/img/misc/favicon-16x16.png" type="image/x-icon" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custome CSS -->
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body class="main__bg scrollable">
+    <header>
+        <!-- Small Screen Navbar -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg__blueGradient">
+            <div class="container-fluid">
+                <a onclick="audioCoinSub.play(); audioBumpSub.play(); audioJumpSub.play();" class="navbar-brand"
+                    href="#"><i class="logo"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-box"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-box"><a class="nav-link" href="./juegos.html">Juegos</a></li>
+                        <li class="nav-box"><a class="nav-link" href="#">Personajes</a></li>
+                        <li class="nav-box"><a class="nav-link" href="./pelicula.html">Película</a></li>
+                        <li class="nav-box"><a class="nav-link" href="./fanaticos.html">Fanáticos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Desktop Navbar -->
+    <ul class="navbar__mario">
+        <li class="tooltip__mario brickWrapper">
+            <img onclick="audioCoinSub.play(); audioBumpSub.play(); audioJumpSub.play();" class="brick gather coin"
+                src="../media/img/misc/bricks.png" alt="" width="50px" />
+            <p class="points">200</p>
+            <div class="coins"></div>
+        </li>
+        <li class="tooltip__mario">
+            <span class="tooltiptext">Inicio</span>
+            <a class="" href="../index.html" target="_self">
+                <img class="gather" src="../media/img/misc/question.png" alt="" width="50px" />
+            </a>
+        </li>
+        <li class="tooltip__mario brickWrapper">
+            <img onclick="audioCoinSub.play(); audioBumpSub.play(); audioJumpSub.play();" class="brick gather coin"
+                src="../media/img/misc/bricks.png" alt="" width="50px" />
+            <p class="points">200</p>
+            <div class="coins"></div>
+        </li>
+        <li class="tooltip__mario">
+            <span class="tooltiptext">Juegos</span>
+            <a class="" href="./juegos.html">
+                <img class="gather" src="../media/img/misc/question.png" alt="" width="50px" />
+            </a>
+        </li>
+        <li class="tooltip__mario brickWrapper">
+            <img onclick="audioCoinSub.play(); audioBumpSub.play(); audioJumpSub.play();" class="brick gather coin"
+                src="../media/img/misc/bricks.png" alt="" width="50px" />
+            <p class="points">200</p>
+            <div class="coins"></div>
+        </li>
+        <li class="tooltip__mario">
+            <span class="tooltiptext">Personajes</span>
+            <a class="" href="#">
+                <img class="gather" src="../media/img/misc/questionhit.png" alt="" width="50px" />
+            </a>
+        </li>
+        <li class="tooltip__mario brickWrapper">
+            <img onclick="audioCoinSub.play(); audioBumpSub.play(); audioJumpSub.play();" class="brick gather coin"
+                src="../media/img/misc/bricks.png" alt="" width="50px" />
+            <p class="points">200</p>
+            <div class="coins"></div>
+        </li>
+        <li class="tooltip__mario">
+            <span class="tooltiptext">Película</span>
+            <a class="" href="./pelicula.html">
+                <img class="gather" src="../media/img/misc/question.png" alt="" width="50px" />
+            </a>
+        </li>
+        <li class="tooltip__mario brickWrapper">
+            <img onclick="audioCoinSub.play(); audioBumpSub.play(); audioJumpSub.play();" class="brick gather coin"
+                src="../media/img/misc/bricks.png" alt="" width="50px" />
+            <p class="points">200</p>
+            <div class="coins"></div>
+        </li>
+        <li class="tooltip__mario">
+            <span class="tooltiptext">Fanáticos</span>
+            <a class="" href="./fanaticos.html">
+                <img class="gather" src="../media/img/misc/question.png" alt="" width="50px" />
+            </a>
+        </li>
+    </ul>
+
+    <!-- Content -->
+    <main class="container col-sm-12 col-lg-8">
+        <h1>Personajes</h1>
+        <p>Conozca los personajes de Mario Kart.</p>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <!-- Mario -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <i class="accordion-1"></i>
+                        <div class="kart-container">
+                            <img class="kart-stats" height="200px" src="../media/img/chars/mario_kart.png" alt="Mario Bros en Karting.">
+                            <img class="kart-stats" height="100%" src="../media/img/chars/mario.png" alt="Mario Bros.">
+                        </div>
+                        <p class="pl-2 card__title">Mario</p>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <h3>Estadisticas</h3>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%">85%</div>
+                        </div>
+                        <p>Velocidad</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+                        </div>
+                        <p>Aceleración</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 55%">55%</div>
+                        </div>
+                        <p>Peso</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
+                        </div>
+                        <p>Tracción</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Luigi -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <i class="accordion-2"></i>
+                        <div class="kart-container">
+                            <img class="kart-stats" height="200px" src="../media/img/chars/luigi_kart.png" alt="Luigi en Karting.">
+                            <img class="kart-stats" height="100%" src="../media/img/chars/luigi.png" alt="Luigi.">
+                        </div>
+                        <p class="pl-2 card__title">Luigi</p>
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <h3>Estadisticas</h3>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
+                        </div>
+                        <p>Velocidad</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
+                        </div>
+                        <p>Aceleración</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
+                        </div>
+                        <p>Peso</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 45%">45%</div>
+                        </div>
+                        <p>Tracción</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Peach -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <i class="accordion-3"></i>
+                        <div class="kart-container">
+                            <img class="kart-stats" height="200px" src="../media/img/chars/peach_kart.png" alt="Princesa Peach en Karting.">
+                            <img class="kart-stats" height="100%" src="../media/img/chars/peach.png" alt="Princesa Peach.">
+                        </div>
+                        <p class="pl-2 card__title">Peach</p>
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <h3>Estadisticas</h3>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+                        </div>
+                        <p>Velocidad</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+                        </div>
+                        <p>Aceleración</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 35%">35%</div>
+                        </div>
+                        <p>Peso</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
+                        </div>
+                        <p>Tracción</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Bowser -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        <i class="accordion-4"></i>
+                        <div class="kart-container">
+                            <img class="kart-stats" height="200px" src="../media/img/chars/bowser_kart.png" alt="Bowser en Karting.">
+                            <img class="kart-stats" height="100%" src="../media/img/chars/bowser.png" alt="Bowser.">
+                        </div>
+                        <p class="pl-2 card__title">Bowser</p>
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <h3>Estadisticas</h3>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
+                        </div>
+                        <p>Velocidad</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+                        </div>
+                        <p>Aceleración</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
+                        </div>
+                        <p>Peso</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%">85%</div>
+                        </div>
+                        <p>Tracción</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="links">
+            <a class="item-link" href="#"><i class="fa-brands fa-2xl fa-facebook"></i></a>
+            <a class="item-link" href="#"><i class="fa-brands fa-2xl fa-twitter"></i></a>
+            <a class="item-link" href="#"><i class="fa-brands fa-2xl fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/js/bootstrap.min.js" integrity="sha512-vyRAVI0IEm6LI/fVSv/Wq/d0KUfrg3hJq2Qz5FlfER69sf3ZHlOrsLriNm49FxnpUGmhx+TaJKwJ+ByTLKT+Yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Sound effects. -->
+    <script src="../js/scrtips.js"></script>
+</body>
+
+</html>
